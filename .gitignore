@@ -1,0 +1,7 @@
+/*
+!.gitignore
+!build.sc
+!Makefile
+!/sim_verilator
+!/src
+!/README.md
