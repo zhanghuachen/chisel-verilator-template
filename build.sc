@@ -8,7 +8,11 @@ import mill.scalalib._
 // support BSP
 import mill.bsp._
 
+<<<<<<< HEAD
 object countertop extends SbtModule with ScalafmtModule { m =>
+=======
+object mux2_1 extends SbtModule with ScalafmtModule { m =>
+>>>>>>> 92bed4c45492a68ca0f5bd3984b12928f10a73e9
   val useChisel3 = false
   override def millSourcePath = os.pwd / "src"
   override def scalaVersion = "2.13.12"
