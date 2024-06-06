@@ -20,6 +20,6 @@ class mux21 extends Module {
 }
 
 
-object mux2_1Main extends App {
-    emitVerilog(new mux21, Array("--target-dir", "generated"))
-}
+// object mux2_1Main extends App {
+//     emitVerilog(new mux21, Array("--target-dir", "generated"))
+// }
