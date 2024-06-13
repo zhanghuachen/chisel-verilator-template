@@ -20,6 +20,6 @@ class Shift extends Module {
     io.res := Cat(highBit, io.num(7,1))
 }
 
-object countertop extends App {
-     emitVerilog(new Shift, Array("--target-dir", "generated"))
-}
+// object countertop extends App {
+//      emitVerilog(new Shift, Array("--target-dir", "generated"))
+// }
