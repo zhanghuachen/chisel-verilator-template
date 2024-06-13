@@ -27,6 +27,6 @@ class mux41 extends Module {
     }
 }
 
-// object mux4_1Main extends App {
-//     emitVerilog(new mux41, Array("--target-dir", "generated"))
-// }
+object mux4_1 extends App {
+    emitVerilog(new mux41, Array("--target-dir", "generated"))
+}
