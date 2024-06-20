@@ -1,4 +1,4 @@
-TOPNAME = mux41
+TOPNAME = top
 NXDC_FILES = constr/top.nxdc
 INC_PATH ?=
 
@@ -22,7 +22,7 @@ $(SRC_AUTO_BIND): $(NXDC_FILES)
 
 # Mill command to generate Verilog
 MILL = mill
-MILL_TARGET = mux4_1
+MILL_TARGET = top
 generate:
 	$(MILL) $(MILL_TARGET)
 
@@ -31,7 +31,7 @@ generate:
 # project source
 VSRCS = $(shell find $(abspath ./generated) -name "*.v" -or -name "*.sv") 
 # CSRCS = $(shell find $(abspath ./sim_verilator) -name "*.c" -or -name "*.cc" -or -name "*.cpp")
-CSRCS = $(shell find $(abspath ./sim_verilator) -name "sim_mux41.cpp")
+CSRCS = $(shell find $(abspath ./sim_verilator) -name "sim_top.cpp")
 CSRCS += $(SRC_AUTO_BIND)
 
 
